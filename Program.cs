@@ -15,6 +15,7 @@ class CSVThings
         Book book;
         List<Book> books = new List<Book>();
         StreamReader sr = new StreamReader(@"C:\Users\OliverDixon\Downloads\somedata.csv");
+        BinaryWriter bw = new BinaryWriter(@"C:\Users\OliverDixon\Downloads\books.bin");
 
         while (!sr.EndOfStream)
         {
@@ -39,6 +40,6 @@ class CSVThings
             Console.WriteLine();
         }
 
-        Console.ReadLine();
+
     }
 }

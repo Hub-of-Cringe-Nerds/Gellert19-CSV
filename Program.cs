@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 
 class CSVThings
@@ -15,8 +15,8 @@ class CSVThings
         Book book;
         List<Book> books = new List<Book>();
         StreamReader sr = new StreamReader(@"C:\Users\OliverDixon\Downloads\somedata.csv");
-        
-        while(!sr.EndOfStream)
+
+        while (!sr.EndOfStream)
         {
             string line = sr.ReadLine()!;
             string[] data = line.Split(',');

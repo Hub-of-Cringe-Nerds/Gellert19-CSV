@@ -10,7 +10,7 @@ class CSVThings
         public double price;
     }
 
-    static void Bookie()
+    static void Main()
     {
         Book book;
         List<Book> books = new List<Book>();
@@ -27,8 +27,6 @@ class CSVThings
             book.price = double.Parse(data[2]);
             books.Add(book);
         }
-
-        Console.WriteLine(books);
 
         Console.ReadLine();
     }

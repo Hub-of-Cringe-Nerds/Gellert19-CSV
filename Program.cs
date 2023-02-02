@@ -30,7 +30,7 @@ class CSVThings
 
         sr.Close();
 
-        Console.WriteLine("{1}                         {1}    {2}", "Title", "Year", "Price");
+        Console.WriteLine("{0}                         {1}    {2}", "Title", "Year", "Price");
         Console.WriteLine();
 
         foreach (var b in books)

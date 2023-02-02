@@ -12,10 +12,13 @@ class CSVThings
 
     static void Main()
     {
+        const string CSVFILE = @"C:\Users\OliverDixon\Downloads\somedata.csv";
+        const string BINFILE = @"C:\Users\OliverDixon\Downloads\books.bin";
+        
         Book book;
         List<Book> books = new List<Book>();
-        StreamReader sr = new StreamReader(@"C:\Users\OliverDixon\Downloads\somedata.csv");
-        BinaryWriter bw = new BinaryWriter(@"C:\Users\OliverDixon\Downloads\books.bin");
+        StreamReader sr = new StreamReader(CSVFILE);
+        BinaryWriter bw = new BinaryWriter(File.Open(BINFILE, FileMode.Create));
 
         while (!sr.EndOfStream)
         {
@@ -40,6 +43,14 @@ class CSVThings
             Console.WriteLine();
         }
 
+        foreach (var o in books)
+        {
+            bw.Write(o.title);
+            bw.Write(o.year);
+            bw.Write(o.price);
+        }
+
+        bw.Close();
 
     }
 }

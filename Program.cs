@@ -28,6 +28,15 @@ class CSVThings
             books.Add(book);
         }
 
+        sr.Close();
+
+        foreach(book in books)
+        {
+            Console.Write(book.title);
+            Console.Write(book.year);
+            Console.Write(book.price);
+        }
+
         Console.ReadLine();
     }
 }

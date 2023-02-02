@@ -30,7 +30,7 @@ class CSVThings
 
         sr.Close();
 
-        foreach(book in books)
+        foreach (book in books)
         {
             Console.Write(book.title);
             Console.Write(book.year);

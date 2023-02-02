@@ -1,0 +1,5 @@
+C:\Users\OliverDixon\Documents\Code\CSV\obj\Debug\net7.0\CSV.csproj.AssemblyReference.cache
+C:\Users\OliverDixon\Documents\Code\CSV\obj\Debug\net7.0\CSV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OliverDixon\Documents\Code\CSV\obj\Debug\net7.0\CSV.AssemblyInfoInputs.cache
+C:\Users\OliverDixon\Documents\Code\CSV\obj\Debug\net7.0\CSV.AssemblyInfo.cs
+C:\Users\OliverDixon\Documents\Code\CSV\obj\Debug\net7.0\CSV.csproj.CoreCompileInputs.cache

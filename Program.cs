@@ -30,11 +30,13 @@ class CSVThings
 
         sr.Close();
 
-        foreach (book in books)
+        Console.WriteLine("{1}                         {1}    {2}", "Title", "Year", "Price");
+        Console.WriteLine();
+
+        foreach (var b in books)
         {
-            Console.Write(book.title);
-            Console.Write(book.year);
-            Console.Write(book.price);
+            Console.WriteLine("{0}    {1}    {2}", b.title.PadRight(25), b.year, b.price);
+            Console.WriteLine();
         }
 
         Console.ReadLine();
